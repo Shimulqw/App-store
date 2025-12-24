@@ -88,14 +88,14 @@ header{
     text-align:center;
 }
 
-.app-icon-img{
-    width:80px;
-    height:80px;
-    object-fit:cover;
-    border-radius:20px;
-    margin-bottom:10px;
-    background:#000;
+.app-item img{
+  width:80px;
+  height:80px;
+  object-fit:contain;
+  margin:0 auto 10px;
+  display:block;
 }
+
 
 /* ===== APP TITLE ===== */
 .app-title{
