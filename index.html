@@ -2,35 +2,31 @@
 <html lang="en">
 <head>
     <title>Quantum Appstore</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Tweaked Apps For Free on iOS and Android" />    
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Tweaked Apps For Free on iOS and Android">
+    <meta charset="utf-8">
 
-    <!-- 🔹 FAVICON LOGO URL -->
-    <link rel="icon" type="image/ico" href="https://i.imgur.com/jGxMZJf.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/ico" href="https://i.imgur.com/jGxMZJf.png">
 
-    <!-- Open Graph Meta -->
-    <meta property="og:title" content="Tweaked Apps For Free on iOS and Android" />
-    <meta property="og:description" content="Tweaked Apps For Free on iOS and Android" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="YOUR_WEBSITE_URL_HERE" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tweaked Apps For Free on iOS and Android">
+    <meta property="og:description" content="Tweaked Apps For Free on iOS and Android">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="YOUR_WEBSITE_URL_HERE">
+    <meta property="og:image" content="PASTE_SOCIAL_SHARE_IMAGE_URL_HERE">
 
-    <!-- 🔹 SOCIAL SHARE IMAGE URL -->
-    <meta property="og:image" content="PASTE_SOCIAL_SHARE_IMAGE_URL_HERE" />
-
-    <!-- Twitter Meta -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Quantum Appstore" />
-    <meta name="twitter:description" content="Install the Best Apps" />
-
-    <!-- 🔹 TWITTER SHARE IMAGE URL -->
-    <meta name="twitter:image" content="PASTE_TWITTER_IMAGE_URL_HERE" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Quantum Appstore">
+    <meta name="twitter:description" content="Install the Best Apps">
+    <meta name="twitter:image" content="PASTE_TWITTER_IMAGE_URL_HERE">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" />  
-    <link href="css/new.css" rel="stylesheet" />	
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/new.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,10 +36,7 @@
 <header>
     <div class="container">
         <div class="header-content animated bounceIn text-center text-white">
-
-            <!-- 🔹 MAIN WEBSITE LOGO -->
             <img src="https://i.imgur.com/jGxMZJf.png" alt="Quantum Logo" width="10%">
-
             <h1><span>QUANTUM APPSTORE</span></h1>
             <p>Install the Best Apps</p>
         </div>
@@ -52,30 +45,33 @@
 
 <section class="app-grid-section">
     <div class="container">
+
         <div class="game-search-wrapper text-center">
             <h3>Search our library</h3>
             <div class="input-icon-wrapper">
-                <input type="text" class="quicksearch input-style" placeholder="Your search term..." />
-            </div>	
+                <input type="text" class="quicksearch input-style" placeholder="Your search term...">
+            </div>
         </div>
 
         <div class="app-section-content">
 
-            <!-- 🔹 SINGLE APP ITEM -->
-            <div class="app-item" data-name="Tiktok">
+            <!-- SINGLE APP ITEM -->
+            <div class="app-item" data-name="tiktok">
                 <div class="app-item-content">
 
-                    <!-- 🔹 APP ICON IMAGE URL -->
-                    <img src="PASTE_APP_ICON_URL_HERE" mg src="https://i.imgur.com/22P74ah.png="PASTE_APP_ICON_URL_HE=/>iv class="app-sub-content">
+                    <!-- APP ICON -->
+                    <img src="https://i.imgur.com/22P74ah.png" alt="TikTok App">
+
+                    <div class="app-sub-content">
                         <div class="app-title">TikTok</div>
                         <div class="app-link-wrapper">
-                            <a href="https://lockedapp.store/cl/i/m552on""Install</a>
+                            <a href="https://lockedapp.store/cl/i/m552on">Install</a>
                         </div>
                     </div>
 
                 </div>
             </div>
-            <!-- 🔹 END APP ITEM -->
+            <!-- END APP ITEM -->
 
         </div>
     </div>
@@ -97,15 +93,16 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <script>
-$(document).ready(function() {
-    $('.quicksearch').on('keyup', function() {
+$(document).ready(function () {
+    $('.quicksearch').on('keyup', function () {
         var value = $(this).val().toLowerCase();
-        $('.app-item').hide().filter(function() {
-            return $(this).data('name').toLowerCase().indexOf(value) !== -1;
+        $('.app-item').hide().filter(function () {
+            return $(this).data('name').indexOf(value) !== -1;
         }).show();
     });
 });
 </script>
 
 </body>
-  </html>
+</html>
+
