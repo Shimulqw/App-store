@@ -487,9 +487,6 @@
   -webkit-animation-name: tada;
   animation-name: tada;
 }
-
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-
 @-webkit-keyframes wobble {
   from {
     -webkit-transform: translate3d(0, 0, 0);
@@ -2846,8 +2843,6 @@
   animation-name: jackInTheBox;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-
 @-webkit-keyframes rollIn {
   from {
     opacity: 0;
@@ -2880,8 +2875,6 @@
   -webkit-animation-name: rollIn;
   animation-name: rollIn;
 }
-
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes rollOut {
   from {
